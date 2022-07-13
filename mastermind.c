@@ -5,9 +5,9 @@ int main(int argc, char *argv[] ){
     int n = 12;
     int i;
     if (argc >0){
-        char *code = malloc(5);
-        char *guess = calloc(5,sizeof(char));
-        char *test = calloc(5,sizeof(char));
+        char *code = malloc(sizeof(char)* 5);
+        char *guess = malloc(sizeof(char)*5);
+        char *test = malloc(sizeof(char)*5);
         
         strcpy(code, argv[1]);
     
